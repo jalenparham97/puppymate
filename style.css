@@ -2,16 +2,35 @@
      margin:0;
      padding:0;
      height: 100%;
+     background: #f4cc70;
  }
  .nav {
     display: flex;
     justify-content: space-between;
-    background: red;
+    background: #20948b;
     padding: 10px 0;
 }
 h4{
     margin:0;
+    font-style: italic;
+    color: #de7a22;
 }
+
+.logo {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.mobile-nav {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.mobile-nav:hover {
+    cursor: pointer;
+}
+
 .desk-nav{
     display:none;
 }
@@ -21,8 +40,13 @@ h4{
     display: flex;
     justify-content: center;
 }
+
+.search {
+    border-radius: 3px;
+}
+
 .fpm {
-    background-color:red;
+    background-color:#de7a22;
 
 }
 .fpm:hover{
@@ -47,10 +71,16 @@ opacity: .8;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 footer{
-    background-color:red;
+    background-color: #20948b;
     text-align:center;
     padding:10px 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    color: #fff;
 }
+
 @media only screen and (min-width:768px){
     .search-flex{
         flex-direction:column;
@@ -71,6 +101,10 @@ footer{
 }
 
 @media only screen and (min-width: 1200px) {
+    .card {
+        width: 20%;
+    }
+    
     .card:last-child {
         display: block;
     }
@@ -81,9 +115,9 @@ footer{
 
     .desk-nav, a {
         display: inline;
-        border-right: 1px solid black;
+        border-right: 5px solid #de7a22;
         padding-right: 6px;
-        color: black;
+        color: #fff;
     }
 
     .desk-nav,a:last-child {
